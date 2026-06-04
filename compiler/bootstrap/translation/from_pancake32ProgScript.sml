@@ -312,9 +312,9 @@ val _ = translate $ spec32 comp_func_def;
 val _ = translate $ make_funcs_def;
 
 val _ = translate $ INST_TYPE[alpha|->“:32”,
-                              beta|->“:mlstring”,
+                              beta|->“:32”,
                               gamma|->“:(mlstring # shape) list”,
-                              delta|->“:32”] get_eids_def;
+                              delta|->“:32”] get_eids_from_decls_def;
 
 val _ = translate $ spec32 compile_to_crep_def;
 
